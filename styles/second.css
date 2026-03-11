@@ -1,0 +1,19 @@
+#dark{
+
+
+    border:5px solid  rgb(162, 195, 43);
+    background-color: rgba(238, 0, 0, 0.997);
+    color: rgb(0, 0, 0);
+
+
+p {
+    background-color: burlywood;
+    color: rgb(169, 45, 169);
+}
+
+h1 {
+    background-color: rgb(255, 255, 255);
+    color: aqua;
+    padding: 20px;
+}
+}

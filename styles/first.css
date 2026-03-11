@@ -1,0 +1,18 @@
+#light{
+    border:5px solid  rgb(162, 195, 43);
+    background-color: rgb(176, 218, 255);
+    color: black;
+
+
+
+p {
+    background-color: burlywood;
+    color: rgb(169, 45, 169);
+}
+
+h1 {
+    background-color: rgb(204, 37, 112);
+    color: rgb(224, 158, 26);
+    padding: 20px;
+}
+} 
