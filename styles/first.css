@@ -9,7 +9,16 @@ p {
     background-color: burlywood;
     color: rgb(169, 45, 169);
 }
-
+.piglet{
+    background-color: blue;
+    color: brown;
+    padding:30px
+}
+.JOjo{
+    background-color: blueviolet;
+    color: black;
+    padding: 10px;
+}
 h1 {
     background-color: rgb(204, 37, 112);
     color: rgb(224, 158, 26);
