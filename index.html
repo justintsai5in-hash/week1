@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>My first webpage</title>
-<link rel="stylesheet" href="./styles/second.css">
-<link rel="stylesheet" href="./styles/first.css">
+  <title>My first webpage</title>
+  <link rel="stylesheet" href="./styles/second.css">
+  <link rel="stylesheet" href="./styles/first.css">
 
 
-  
+
 
 </head>
-<body id="light">
-    <button onclick="document.body.id='dark';">
-      Dark mode
-    </button>
-        <button onclick="document.body.id='light';">
-      Dark mode
-    </button>
 
-<h1>
-  My first webgpage
-</h1>
-<h2>Full-Stack Curriculum</h2>
-<img src="./images/174308740553.jpg" width="400">
-<p>Learn the skills to become a full-stack developer</p>
+<body id="dark">
+  <button id="color-mode" onclick="changeColors();">
+    Light mode
+  </button>
+  <button onclick="HowAreYou();">
+    HowAreYou
+  </button>
 
-<video width="400" controls>
-  <source src="images/saber-excalibur-fate-stay-night-moewalls-com.mp4" type="video/mp4">
-  你的瀏覽器不支援影片播放
-</video>
+  <script>
+    const colorModeButton = document.querySelector('#color-mode');
 
-<h3>Introduction to HTML</h3>
-<p>HTML represents the content and structure of a webpage</p>
+    function changeColors() {
+      if (document.body.id === "dark") {
+        // 切換到淺色模式
+        document.body.id = 'light';
+        colorModeButton.textContent = 'Dark mode';
+        console.log('changeColor');
+      } else {
+        // 切換回深色模式
+        document.body.id = 'dark';
+        colorModeButton.textContent = 'Light mode';
+        console.log('changeColor');
+      };
+    };
+    function HowAreYou() {
+      let feelings = prompt("How are you feeling");
+      respond(feelings)
+    }
 
-<h3>Introduction to CSS</h3>
-<p class="piglet">CSS is used to style a webpage</p>
+      function respond(mood){
+      if (mood === "sleepy") {
+        alert('WAKE UP');
+      } else {
+        alert('Oh! You are feeling' + mood + ".");
+      };
+    };
+   
+    console.log("mood", typeof mood);
+    console.log("hi");
+    if (true) {
+      let insideIf='yep';
+      console.log(typeof insideIf);
+    }
+     
+    function addtwo(value) {
+       console.log(value+2);
+       
+     return value+2;  
+    }
+    addtwo(5);
 
-<h3>Introduction to JavaScript</h3>
-<p class="JOjo">JavaScript adds interactivity to a webpage</p>
+    let result=addtwo(9);
+    console.log("result",result);
+
+    </script>
+
+  <h1>
+    My first webgpage
+  </h1>
+  <h2>Full-Stack Curriculum</h2>
+  <img src="./images/174308740553.jpg" width="400">
+  <p>Learn the skills to become a full-stack developer</p>
+
+  <video width="400" controls>
+    <source src="images/saber-excalibur-fate-stay-night-moewalls-com.mp4" type="video/mp4">
+    你的瀏覽器不支援影片播放
+  </video>
+
+  <h3>Introduction to HTML</h3>
+  <p>HTML represents the content and structure of a webpage</p>
+
+  <h3>Introduction to CSS</h3>
+  <p class="piglet">CSS is used to style a webpage</p>
+
+  <h3>Introduction to JavaScript</h3>
+  <p class="JOjo">JavaScript adds interactivity to a webpage</p>
 
 
-<script>
-     let dog = {
-        name:"jajajaja",
-        weight:7,
-        happy:false,
-     };
-     console.log(dog.name);
-     let family={
-        dad:"say dad",
-        mom:"hihi",
-        daughter:"GoJo",
-        pet:dog,
-     };
-     console.log(family);
-     family.pet.happy=true
-     console.log(console)
+  <script>
+    let dog = {
+      name: "jajajaja",
+      weight: 7,
+      happy: false,
+    };
+    console.log(dog.name);
+    let family = {
+      dad: "say dad",
+      mom: "hihi",
+      daughter: "GoJo",
+      pet: dog,
+    };
+    console.log(family);
+    family.pet.happy = true
+    console.log(console)
 
-let mood=prompt("How are you feeling");
-if(mood==="sleepy"){
-  alert('WAKE UP');
-}else{
-  alert('Oh! You are feeling'+mood+".");
-}
-console.log(mood);
-</script>
-<footer>
-  <p>
-  2026//12
-  Justin
-</p>
-</footer>
+    let mood = prompt("How are you feeling");
+    if (mood === "sleepy") {
+      alert('WAKE UP');
+    } else {
+      alert('Oh! You are feeling' + mood + ".");
+    }
+    console.log(mood);
+  </script>
+  <footer>
+    <p>
+      2026//12
+      Justin
+    </p>
+  </footer>
 
 </body>
+
 </html>
